@@ -1,0 +1,42 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <textarea id="textbox1" class="textbox" onclick="copyText(this)">รับยอดจ้า ขอบคุณค่ะคุณลูกค้า​ ขอให้คุณลูกค้ามีสุขภาพแข็งแรง ร่ำรวยๆ ประทับใจกลับมาสั่งเพิ่มได้เลยนะคะ ❤❤ ยินดีรับใช้ ยินดีให้บริการจ้า 💖🙏</textarea>
+    <span id="textbox1-copied" class="animate__animated animate__shakeY">Copied!</span>
+    <br>
+    <textarea id="textbox2" class="textbox" onclick="copyText(this)">รบกวนลูกค้าแจ้งชื่อ ที่อยู่และเบอร์โทรศัพท์ให้น้องแอดมินทางช่องแชทได้เลยจ้า</textarea>
+    <span id="textbox2-copied" class="animate__animated animate__shakeY">Copied!</span>
+	  <br>
+    <textarea id="textbox3" class="textbox" onclick="copyText(this)">สวัสดีค่ะ ออเดอร์คุณลูกค้ามียอดค้าง - บาทจ้า รบกวนโอนเพิ่มให้น้องแอดมินหน่อยจ้า หรือหากต้องการยกเลิกสินค้ารายการไหนแจ้งแอดมินหน่อยจ้า</textarea>
+    <span id="textbox3-copied" class="animate__animated animate__shakeY">Copied!</span>
+	  <br>
+	  <textarea id="textbox4" class="textbox" onclick="copyText(this)">ขอแจ้งเลขพัสดุของลูกค้านะคะ
+จัดส่งโดย Ninja Van
+เลขพัสดุ : 
+สามารถตรวจสอบสถานะได้ที่ https://www.ninjavan.co/th-th/tracking?id=
+ขอบคุณมากๆนะคะ คุณลูกค้า</textarea>
+	  <span id="textbox4-copied" class="animate__animated animate__shakeY">Copied!</span>
+		<br>
+	  <textarea id="textbox5" class="textbox" onclick="copyText(this)">ขอแจ้งเลขพัสดุของลูกค้านะคะ
+จัดส่งโดย Kerry Express
+เลขพัสดุ : 
+สามารถตรวจสอบสถานะได้ที่ 
+ขอบคุณมากๆนะคะ คุณลูกค้า</textarea>
+	  <span id="textbox5-copied" class="animate__animated animate__shakeY">Copied!</span>
+    <script>
+      function copyText(textbox) {
+        textbox.select();
+        document.execCommand("copy");
+        var notification = textbox.id + "-copied";
+        document.getElementById(notification).style.display = "inline-block";
+        setTimeout(function(){ document.getElementById(notification).style.display = "none"; }, 1500);
+      }
+    </script>
+  </body>
+</html>
